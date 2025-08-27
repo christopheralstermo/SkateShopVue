@@ -1,9 +1,10 @@
 <template>
   <div class="container">
-    <h1>Skateshop</h1>
-    <div class="layout">
-      <div class="sidebar">
-        <div class="gender-select">
+    <Header />
+    <h1 id="frontPageH1">Skateshop</h1>
+    <div class="layoutFrontPage">
+      <div class="sidebarFrontPage">
+        <div class="gender-selectFrontPage">
           <select v-model="gender">
             <option value="" disabled>Kjønn</option>
             <option value="female">Hun</option>
@@ -23,7 +24,7 @@
           </li>
         </ul>
       </div>
-      <div class="content">
+      <div class="contentFrontPage">
         <img
             v-if="gender && currentImage"
             :src="currentImage"

@@ -1,20 +1,14 @@
 <template>
   <div class="container">
+    <Header />
     <h1>{{ category }}</h1>
     <p>Dette er siden for {{ category }}. Produkter kommer snart!</p>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'CategoryPage',
-  props: {
-    category: {
-      type: String,
-      required: true
-    }
-  }
-};
+import CategoryController from "../controllers/CategoryController.js";
+export default CategoryController;
 </script>
 
 <style scoped>

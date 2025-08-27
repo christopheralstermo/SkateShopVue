@@ -1,8 +1,9 @@
 <template>
   <div class="container">
-    <h1>Skateboard Setup</h1>
-    <div class="layout">
-      <div class="sidebar">
+    <Header />
+    <h1 id="skatePageH1">Skateboard Setup</h1>
+    <div class="layoutSkatePage">
+      <div class="sidebarSkatePage">
         <ul>
           <li
               v-for="component in components"
@@ -14,12 +15,12 @@
           </li>
         </ul>
       </div>
-      <div class="content">
+      <div class="contentSkatePage">
         <img
             v-if="currentImage"
             :src="currentImage"
             alt="Skateboard"
-            class="skateboard-image"
+            class="skateboard-imageSkatePage"
         />
       </div>
     </div>
@@ -29,6 +30,8 @@
 <script>
 import SkatePageController from '../controllers/SkatePageController.js'
 export default SkatePageController;
+
+
 </script>
 
 <style scoped>

@@ -1,8 +1,10 @@
 import '../style/FrontPage.css';
 import '../style/SkateboardPage.css';
+import Header from "../components/Header.vue";
 
 export default {
     name: 'SkateboardPage',
+    components: {Header},
     data() {
         return {
             components: ['Bearings', 'Wheels', 'Trucks', 'Deck', 'Nuts', 'Griptape'],
