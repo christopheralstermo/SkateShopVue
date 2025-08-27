@@ -1,0 +1,87 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.layout {
+    display: flex;
+}
+
+.sidebar {
+    width: 25%;
+    padding: 10px;
+}
+
+.gender-select {
+    margin-bottom: 20px;
+}
+
+.gender-select select {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.gender-select select:focus {
+    outline: none;
+    border-color: #2c3e50;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    background-color: #f9f9f9;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+}
+
+.sidebar li:not(.disabled):hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.sidebar li.disabled {
+    cursor: default;
+}
+
+.content {
+    width: 75%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-image {
+    max-width: 400px;
+    height: auto;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skateboard-image {
+    max-width: 400px;
+    height: auto;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
