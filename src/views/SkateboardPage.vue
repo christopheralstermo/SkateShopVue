@@ -10,6 +10,7 @@
               :key="component"
               @mouseover="startAnimation(component)"
               @mouseleave="stopAnimation()"
+              @click="navigate(component)"
           >
             {{ component }}
           </li>
@@ -24,6 +25,7 @@
         />
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 

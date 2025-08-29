@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import FrontPage from './views/FrontPage.vue';
 import CategoryPage from './views/CategoryPage.vue';
 import SkateboardPage from './views/SkateboardPage.vue';
+import DeckPage from './views/DeckPage.vue';
 
 const routes = [
     { path: '/', component: FrontPage },
@@ -13,7 +14,8 @@ const routes = [
     { path: '/t-skjorte', component: CategoryPage, props: { category: 'T-skjorte' } },
     { path: '/bukse', component: CategoryPage, props: { category: 'Bukse' } },
     { path: '/sko', component: CategoryPage, props: { category: 'Sko' } },
-    { path: '/skateboard', component: SkateboardPage }
+    { path: '/skateboard', component: SkateboardPage },
+    { path: '/decks', component: DeckPage },
 ];
 
 const router = createRouter({

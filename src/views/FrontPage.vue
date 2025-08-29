@@ -6,9 +6,8 @@
       <div class="sidebarFrontPage">
         <div class="gender-selectFrontPage">
           <select v-model="gender">
-            <option value="" disabled>Kjønn</option>
-            <option value="female">Hun</option>
-            <option value="male">Han</option>
+            <option value="female">Dame</option>
+            <option value="male">Herre</option>
           </select>
         </div>
         <ul>
@@ -34,6 +33,7 @@
       </div>
     </div>
   </div>
+  <Footer />
 </template>
 
 <script>

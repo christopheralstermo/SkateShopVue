@@ -1,0 +1,20 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.deck-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.deck-item {
+    text-align: center;
+}
+
+.deck-item img {
+    max-width: 200px;
+    height: auto;
+}

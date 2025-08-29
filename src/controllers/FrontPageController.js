@@ -1,9 +1,10 @@
 import '../style/FrontPage.css';
 import Header from "../components/Header.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
     name: 'FrontPage',
-    components: {Header},
+    components: {Header, Footer},
     data() {
         return {
             categories: ['Caps', 'Briller', 'Genser/Jakke', 'T-skjorte', 'Bukse', 'Sko', 'Skateboard'],

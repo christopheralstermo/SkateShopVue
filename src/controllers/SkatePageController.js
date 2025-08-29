@@ -1,22 +1,23 @@
 import '../style/FrontPage.css';
 import '../style/SkateboardPage.css';
 import Header from "../components/Header.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
     name: 'SkateboardPage',
-    components: {Header},
+    components: {Header, Footer},
     data() {
         return {
-            components: ['Bearings', 'Wheels', 'Trucks', 'Deck', 'Nuts', 'Griptape'],
+            components: ['Bearings', 'Wheels', 'Trucks', 'Decks', 'Nuts', 'Griptape'],
             activeComponent: null,
-            currentFrame: -1, // Starter på -1 for å vise bearings.png først
+            currentFrame: -1,
             totalFrames: 92,
             animationInterval: null,
             targetFrames: {
                 Bearings: 0,
                 Wheels: 9,
                 Trucks: 24,
-                Deck: 23,
+                Decks: 23,
                 Nuts: 69,
                 Griptape: 70
             },
@@ -26,7 +27,6 @@ export default {
     computed: {
         currentImage() {
             if (this.currentFrame === -1) {
-                console.log('Loading initial: ../images/skateboard/bearings.png');
                 return new URL('../images/skateboard/start.png', import.meta.url).href;
             }
             const frame = this.currentFrame.toString().padStart(2, '0');
@@ -35,6 +35,11 @@ export default {
         }
     },
     methods: {
+        navigate(component) {
+            if (component == 'Decks'){
+                this.$router.push('/decks');
+            }
+        },
         startAnimation(component) {
             this.activeComponent = component;
             const targetFrame = this.targetFrames[component];
